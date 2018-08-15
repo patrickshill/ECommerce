@@ -1,0 +1,11 @@
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.deps.json
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.runtimeconfig.json
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.runtimeconfig.dev.json
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.dll
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\bin\Debug\netcoreapp2.0\ECommerce.pdb
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.csprojResolveAssemblyReference.cache
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.csproj.CoreCompileInputs.cache
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.AssemblyInfoInputs.cache
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.AssemblyInfo.cs
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.dll
+C:\Users\Patrick\Documents\CodingDojo\C#\DatabaseModels\EntityFramework\ECommerce\obj\Debug\netcoreapp2.0\ECommerce.pdb

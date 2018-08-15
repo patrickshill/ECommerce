@@ -1,0 +1,14 @@
+@using ECommerce.Models
+@model List<Product>
+<div class="row">
+    <div class="col-lg-2">
+        @Html.Partial("Forms/filter")
+        <br>
+        @Html.Partial("Forms/productForm")
+    </div>
+    <div class="col-lg-10">
+        @foreach(Product p in ViewBag.products) {
+            @Html.Partial("productDisplay",p)
+        }
+    </div>
+</div>

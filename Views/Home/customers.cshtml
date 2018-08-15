@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Add a new customer</h2>
+        @Html.Partial("Forms/customerForm")
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-striped">
+            @foreach(var c in ViewBag.customers) {
+                <tr>
+                    <td>@c.name</td>
+                    <td>@c.created_at.ToString("D")</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

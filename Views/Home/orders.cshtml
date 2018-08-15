@@ -1,0 +1,50 @@
+@model ECommerce.Models.Order
+<div class="row">
+    <div class="col-lg-12">
+        <h3>Add a new order</h3>
+        <p style="color: red;">@ViewBag.orderError</p>
+        <form asp-action="createOrder" method="post">
+            Customer 
+            <select asp-for="customer_id">
+                @foreach(var customer in ViewBag.customers) {
+                    <option value="@customer.id">@customer.name</option>;
+                }
+            </select>
+            <br>
+            Order
+            <select asp-for="quantity">
+                @for(int i=1;i<30;i++) {
+                    <option value="@i">@i</option>;
+                }
+            </select>
+            <select asp-for="product_id">
+                @foreach(var product in ViewBag.products) {
+                    <option value="@product.id">@product.name</option>;
+                }
+            </select>
+            <br>
+            <input class="btn btn-primary" type="submit" value="Order">
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-striped">
+            <thead>
+                <th>Customer Name</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Date</th>
+            </thead>
+            @foreach(var order in ViewBag.orders) {
+                <tr>
+                    <td>@order.customer.name</td>
+                    <td>@order.product.name</td>
+                    <td>@order.quantity</td>
+                    <td>@order.created_at.ToString("d")</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

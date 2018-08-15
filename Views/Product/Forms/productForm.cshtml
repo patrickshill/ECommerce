@@ -1,0 +1,25 @@
+@model ECommerce.Models.Product
+
+<form asp-controller="Product" asp-action="createProduct" method="post">
+    <p>
+        Name:
+        <br>
+        <input type="text" asp-for="name">
+    </p>
+    <p>
+        Image (url):
+        <br>
+        <input type="text" asp-for="url">
+    </p>
+    <p>
+        Description
+        <br>
+        <input type="text" asp-for="description">
+    </p>
+    <p>
+        Initial Quantity
+        <br>
+        <input type="number" asp-for="quantity">
+    </p>
+    <input class="btn btn-primary" type="submit" value="Create">
+</form>

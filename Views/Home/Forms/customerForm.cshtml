@@ -1,0 +1,14 @@
+@model ECommerce.Models.Customer
+<form asp-action="createCustomer" asp-controller="Home" method="post">
+<table class="table">
+    <tr>
+        <td>Customer Name:</td>
+        <td>
+            <input type="text" asp-for="name">
+        </td>
+        <td>
+            <input type="submit" value="Add">
+        </td>
+    </tr>
+</table>
+</form>

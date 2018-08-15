@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="~/css/site.css">
+<div class="row">
+    <div class="col-lg-2">
+        <br>
+        <form method="post">
+            <input type="text" autocomplete="off">
+        <br>
+        <br>
+            <input type="submit" value="Filter">
+        </form>
+    </div>
+    <div class="col-lg-10">
+            <br>
+            @foreach(Product p in ViewBag.products) {
+                @Html.Partial("Forms/productDisplay",p)
+            }
+            <p><a href="/products">show more...</a></p>
+            <br>
+
+            <h4>Recent Orders</h4>
+            @foreach(var order in ViewBag.orders) {
+                <p>@order.customer.name purchased @order.quantity @order.product.name (s) (@DateTime.Now.Subtract(@order.created_at).Hours.ToString() hours ago)</p>;
+            }
+            <p><a href="/orders">show all orders...</a></p>
+            <br>
+
+            <h4>New Customers</h4>
+            @foreach(var customer in ViewBag.customers) {
+                <p>@customer.name joined the store (@DateTime.Now.Subtract(@customer.created_at).Hours.ToString() hours ago)</p>;
+            }
+            <p><a href="/customers">show all customers...</a></p>
+    </div>
+</div>
